@@ -24,6 +24,7 @@ body {
 
 #todo-form {
   padding: 32px 32px 0;
+  text-align: center;
 }
 
 #todo-form input {
@@ -79,8 +80,8 @@ body {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
   padding: 12px;
   border-radius: 4px;
-  width: 225px;
-  min-height: 120px;
+  width: 100%;
+  min-height: auto;
   /* flex-wrap: wrap; */
 }
 
@@ -103,8 +104,42 @@ body {
 
 /* Responsiveness */
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
+  #todo-form input {
+    margin: 10px;
+  }
   .swim-lane {
-    width: 100%;
+    padding: 8px;
+  }
+
+  .task {
+    font-size: 14px;
+    padding: 8px;
   }
 }
+
+/* @media (min-width: 768px) {
+  .swim-lane {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  .task {
+    flex: 1 1 calc(50% - 24px);
+    margin: 12px;
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  .swim-lane {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+  } */
+
+/* .task {
+    flex: 1 1 calc(33.33% - 24px); Three columns layout
+    margin: 12px;
+  }
+} */
